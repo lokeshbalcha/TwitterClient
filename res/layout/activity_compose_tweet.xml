@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <ImageView
+        android:id="@+id/ivProfileImagec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tvUsernamec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/ivProfileImagec"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tvScreennamec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#80000000"
+        android:layout_alignLeft="@+id/tvUsernamec"
+        android:layout_below="@+id/tvUsernamec"
+        android:text="TextView" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/etComposeTweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ivProfileImagec"
+        android:ems="10"
+        android:hint="What&apos;s happening?" >
+
+        <requestFocus />
+    </MultiAutoCompleteTextView>
+
+</RelativeLayout>
